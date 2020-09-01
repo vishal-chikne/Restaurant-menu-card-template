@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BUSTERS</title>
+	<style type="text/css">
+		body{
+
+			margin: 0;
+			padding: 0;
+			background:#262626;
+			font-family: sans-serif;
+
+		}
+		.ring
+		{
+			position: absolute;
+			top:55%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			width:300px;
+			height:300px;
+			background: transparent;
+			border:6px solid #3c3c3c;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 300px;
+			font-size: 55px;
+			color: #03a9f4;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			text-shadow: 0 0 30px #03a9f4;
+			box-shadow: 0 0 20px rgba(0,0,0,0.5);
+		}
+		.ring:before
+		{
+			content: '';
+			position: absolute;
+			top:-10px;
+			left: -5px;
+			width: 100%;
+			height: 100%;
+			border: 7px solid transparent;
+			border-top: 7px solid #03a9f4;
+			border-right: 7px solid #03a9f4;
+			border-radius: 50%;
+			animation: animateCircle 2s linear infinite;
+
+		}
+		span
+		{
+			display: block;
+			position: absolute;
+			top: calc(50% - 2px);
+			left:1%;
+			width: 99%;
+			height: 7px;
+			background: transparent;
+			animation: animate 2s linear infinite;
+
+		}
+		span:before
+		{
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: #03a9f4;
+			top: -12px;
+			right: -20px;
+			box-shadow: 0 0 20px #03a9f4;
+		}
+		@keyframes animateCircle
+		{
+			0%
+			{
+				transform: rotate(0deg);
+			}
+			100%
+			{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes animate
+		{
+			0%
+			{
+				transform: rotate(45deg);
+			}
+			100%
+			{
+				transform: rotate(405deg);
+			}
+		}
+
+	</style>
+<script type="text/javascript">setTimeout(function(){window.location.href='Homepage.html'},3000);</script>
+</head>
+<body>
+<div class="ring">
+	LOADING
+<span></span>
+</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+.border1{
+	display: block;
+	top:90%;
+	margin: 0%;
+	position: absolute;
+	left: 40%;
+	width: 300px;
+	height: 5px;
+	background-color:#fff;
+	color: #fff;
+}	
+.border2{
+	display: block;
+	top:180%;
+	margin: 0%;
+	position: absolute;
+	left: 40%;
+	width: 300px;
+	height: 5px;
+	background-color:#fff;
+	color: #fff;
+}	
+.card
+{
+	top:135%;
+	left: 34%;
+	transform: translate(-50%,-50%);
+	width:300px;
+	height: 400px;
+	position: absolute;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform: translate(-50%,-50%) perspective(6000px);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 30px 100px rgba(0,0,0,.5);
+	transition: 1s;
+
+}
+.card:hover
+{
+	transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card:before
+{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #FFF;
+	transform-origin: bottom;
+	transform: skewX(-45deg);
+}
+.card:after
+{
+	content: '';
+	position: absolute;
+	top:0;
+	right: -5px;
+	width: 5px;
+	height: 100%;
+	background: #FFF;
+	transform-origin: left;
+	transform: skewY(-45deg);
+}
+.card .imageBox
+{
+	width:100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: 1s;
+
+}
+.card:hover .imageBox
+{
+	transform: rotateY(-135deg);
+}
+.card .details
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 20px;
+	z-index: -1;
+}
+.card1
+{
+	top:135%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	width:300px;
+	height: 400px;
+	position: absolute;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform: translate(-50%,-50%) perspective(6000px);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,0.5), 0 30px 100px rgba(0,0,0,.5);
+	transition: 1s;
+
+}
+.card1:hover
+{
+	transform: translate(-50%,-50%) perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5), 0 10px 100px rgba(0,0,0,.5);
+}
+.card1:before
+{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #FFF;
+	transform-origin: bottom;
+	transform: skewX(-45deg);
+}
+.card1:after
+{
+	content: '';
+	position: absolute;
+	top:0;
+	right: -5px;
+	width: 5px;
+	height: 100%;
+	background: #FFF;
+	transform-origin: left;
+	transform: skewY(-45deg);
+}
+.card1 .imageBox1
+{
+	width:100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: 1s;
+
+}
+.card1:hover .imageBox1
+{
+	transform: rotateY(-135deg);
+}
+.card1 .details1
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 20px;
+	z-index: -1;
+}
+video
+{
+	object-fit: cover;
+}
+.smoky1
+{
+	margin: 10;
+	padding: 0;
+	position:absolute;
+	top:45%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	font-size: 5em;
+	color: #fff;
+	font-family: mathura;
+	letter-spacing: 0.2em;
+	
+	
+}
+.smoky span
+{
+	display: inline-block;
+	animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+	0%
+	{
+		opacity: 0;
+		transform: rotateY(90deg);
+		filter: blur(10px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: rotateY(0deg);
+		filter: blur(0);
+	}
+
+}
+.smoky span:nth-child(1)
+{
+	animation-delay: 0s; 
+}
+.smoky span:nth-child(2)
+{
+	animation-delay: 1.5s; 
+}.smoky span:nth-child(3)
+{
+	animation-delay: 2s; 
+}.smoky span:nth-child(4)
+{
+	animation-delay: 2.20s; 
+}.smoky span:nth-child(5)
+{
+	animation-delay: 2.50s; 
+}.smoky span:nth-child(6)
+{
+	animation-delay: 2.75s; 
+}.smoky span:nth-child(7)
+{
+	animation-delay: 3s; 
+}
+.smoky span:nth-child(8)
+{
+	animation-delay: 3s; 
+}
+
+
+
